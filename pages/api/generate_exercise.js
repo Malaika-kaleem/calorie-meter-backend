@@ -7,7 +7,7 @@ export const config = {
 };
 
 async function generateExercisePlan(profileData) {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_AI_API_KEY;
+  const apiKey = process.env.GOOGLE_AI_API_KEY;
   const model = 'gemini-1.5-flash';
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
